@@ -295,3 +295,13 @@
 (when (file-exists-p "~/.emacs.d/init-user.el")
   (setq user-custom-file "~/.emacs.d/init-user.el")
   (load user-custom-file))
+
+(load-theme 'monokai t)
+(setq load-path (cons "/usr/share/emacs/site-lisp/ess" load-path))
+(require 'ess-site)
+
+
+
+;; CSP Mode
+(setq load-path (cons "/usr/share/emacs/site-lisp/csp-mode" load-path))
+(require 'csp-mode)
